@@ -2,6 +2,8 @@
   "name": "vds-final",
   "version": "0.1.0",
   "private": true,
+  "main": "app.js",
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
