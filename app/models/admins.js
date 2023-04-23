@@ -10,4 +10,4 @@ const adminSchema = new Schema({
         required : [true , 'password is a required field'],
     },
 })
-export default mongoose.model('Admins', adminSchema)
+export default mongoose.model('Admin', adminSchema)
