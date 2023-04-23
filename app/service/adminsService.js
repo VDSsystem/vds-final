@@ -1,4 +1,4 @@
-import AdminRepo from "../repository/admins-repo"
+import AdminRepo from "../repository/admins-repo.js"
 const repo = new AdminRepo()
 
 class AdminService {
@@ -23,4 +23,4 @@ class AdminService {
 
 }
 
-export default new AccountService()
+export default new AdminService()

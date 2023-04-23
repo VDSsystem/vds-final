@@ -6,16 +6,13 @@ import mongoose from "mongoose";
 //port number
 const port = 3000
 const app = express()
+mongoose.connect('mongodb+srv://vdssystem0:VA123AVdkd@cluster0.vdo3rvu.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => {
+    console.log('MongoDB connected successfully');
+    // Your code here
+  })
+  .catch((err) => console.error(err));
 
-/*Database connection*/
-const uri = 'mongodb+srv://vdssystem0:VA123AVdkd@cluster0.vdo3rvu.mongodb.net/test?retryWrites=true&w=majority'
-const options = {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}
-mongoose.connect(uri, options, () => {
-    console.log(`successfully connected to database`)
-})
 
 //two types [dynamic , static]
 app.use(express.static('public'))

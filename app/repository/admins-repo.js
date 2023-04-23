@@ -1,4 +1,4 @@
-import Admin from "../models/admins";
+import Admin from "../models/admins.js";
 export default class AdminRepo {
     getAdmin() {
         return Admin.find()
