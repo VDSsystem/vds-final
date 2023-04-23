@@ -1,10 +1,10 @@
 import Admin from "../models/admins";
 export default class AdminRepo {
-    async getAdmin() {
-        return await Admin.find()
+    getAdmin() {
+        return Admin.find()
     }
-    async addAccount(admin) {
-        return await Admin.create(admin)
+    addAdmin(admin) {
+        return Admin.create(admin)
     }
 
 }
